@@ -29,6 +29,10 @@ def get_shipping_cost(price):
         return 7.95
     elif 30 <= price < 50:
         return 11.95
+    elif 50 <= price:
+        return 0
+    else:
+        return 0
 
 
 if __name__ == '__main__':
