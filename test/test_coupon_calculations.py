@@ -23,6 +23,12 @@ class MyTestCase(unittest.TestCase):
         self.assertAlmostEqual(cc.calculate_price(17.99, 5, 20), 19.44, places=2)
         self.assertAlmostEqual(cc.calculate_price(17.99, 10, 10), 13.93, places=2)
 
+    def test_price_30_to_50(self):
+        self.assertAlmostEqual(cc.calculate_price(41.27, 5, 10), 47.27, places=2)
+        self.assertAlmostEqual(cc.calculate_price(41.27, 5, 15), 45.35, places=2)
+        self.assertAlmostEqual(cc.calculate_price(41.27, 5, 20), 39.18, places=2)
+        self.assertAlmostEqual(cc.calculate_price(41.27, 10, 10), 38.26, places=2)
+
 
 if __name__ == '__main__':
     unittest.main()
