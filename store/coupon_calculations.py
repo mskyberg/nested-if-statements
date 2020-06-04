@@ -36,4 +36,9 @@ def get_shipping_cost(price):
 
 
 if __name__ == '__main__':
-    pass
+    cost = input("Enter Cost Of Product:")
+    c_coupon = input("How Much Cash Coupon? $5 or $10:")
+    p_coupon = input("How Much Percentage Coupon? 10%, 15%, 20%:")
+
+    total = calculate_price(float(cost), int(c_coupon), int(p_coupon))
+    print(f'Your Order Total Is ${total:.2f}')
