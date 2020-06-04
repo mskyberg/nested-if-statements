@@ -25,6 +25,8 @@ def calculate_price(price, cash_coupon, percent_coupon):
 def get_shipping_cost(price):
     if price < 10:
         return 5.95
+    elif 10 <= price < 30:
+        return 7.95
 
 
 if __name__ == '__main__':
